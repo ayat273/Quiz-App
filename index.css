@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+}
+.container{
+  width:800px ;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #f8f8f8;
+}
+.container .info {
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+}
+.container .category,
+.container .count {
+flex: 1;
+}
+.container .count {
+  text-align: right;
+}
+.container .quiz-area {
+  margin: 15px;
+  padding: 20px;
+  background-color: #fff;
+}
+.container .quiz-area h2 {
+  margin: 0;
+}
+.container .answer-area {
+  background-color: #fff;
+  padding: 0 20px 20px;
+}
+.container .answer-area .answer {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+.container .answer-area .answer:not(:last-child) {
+  border: 1px solid #dfdfdf;
+}
+.container .answer-area .answer input[type="radio"]:checked + label{
+  color: #0075ff;
+}
+.container .answer-area .answer label {
+  color: #777;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  top: -1px;
+  margin-left: 5px;
+}
+.container .submit {
+  background-color: #0075ff;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  display: block;
+}
+.container .submit:focus{
+  outline: none;
+}
+.container .bullets {
+  padding: 15px;
+  border-top: 1px solid #dfdfdf;
+  background-color: #fff;
+  display: flex;
+}
+.container .bullets .spans {
+  display: flex;
+  flex: 1;
+}
+.container .bullets .spans span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #ddd;
+}
+.container .bullets .spans span.on {
+  background-color: #0075ff;
+}
+.container .results span {
+  font-weight: bold;
+}
+.container .results span.perfect {
+  color: #0075ff;
+}
+.container .results span.good{
+  color: #009688;
+}
+.container .results span.bad{
+  color: #dc0a0a;
+}
